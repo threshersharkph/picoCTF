@@ -1,8 +1,8 @@
-#Author: Jake Beley
+Author: Jake Beley
 
-#Description
+Description
 
-#Your goal is to find the flag. compress_and_attack.py nc mercury.picoctf.net 29858
+Your goal is to find the flag. compress_and_attack.py nc mercury.picoctf.net 29858
 
 ```
 #from apoirrier
