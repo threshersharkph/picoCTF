@@ -12,7 +12,7 @@ def oracle(text):
     sh.recvline()
     return int(sh.recvline().decode())
 
-known = "picoCTF{"
+known = "picoCTF{"  #you need to run this 2 - 3 times adding the found letters or _
 
 length = oracle(known)
 print(known, end="")
