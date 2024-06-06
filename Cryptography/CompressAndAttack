@@ -1,0 +1,27 @@
+#from apoirrier
+
+from pwn import *
+import string
+
+sh = remote("mercury.picoctf.net", 29858)
+
+def oracle(text):
+    sh.recvuntil("encrypted:")
+    sh.sendline(text)
+    sh.recvline()
+    sh.recvline()
+    return int(sh.recvline().decode())
+
+known = "picoCTF{sheriff_you_solved_the_crime"
+
+length = oracle(known)
+print(known, end="")
+
+current = ""
+while current != "}":
+    for c in string.printable:
+        if oracle(known + c) == length:
+            known += c
+            current = c
+            print(c, end="")
+            break
