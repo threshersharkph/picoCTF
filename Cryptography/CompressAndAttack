@@ -12,7 +12,7 @@ def oracle(text):
     sh.recvline()
     return int(sh.recvline().decode())
 
-known = "picoCTF{sheriff_you_solved_the_crime"
+known = "picoCTF{"
 
 length = oracle(known)
 print(known, end="")
