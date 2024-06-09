@@ -5,8 +5,10 @@ Check out my new, never-before-seen method of encryption! I totally invented it 
 I added so many for loops that I don't even know what it does. It's extraordinarily secure!
 
 CHALLENGE ENDPOINTS
-\n Download output.txt	
-\n Download encrypt.py	
+
+Download output.txt	
+
+Download encrypt.py	
 
 ```
 #!/usr/bin/env python3
